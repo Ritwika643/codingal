@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"] {
+            background-color: burlywood;
+        }
+        input[type="number"] {
+            background-color: bisque;
+        }
+        .class1 {
+            border: 5px solid rebeccapurple;
+        }
+        h2 + p {
+            text-shadow: 4px 4px 4px gray; 
+        }
+        li:nth-child(5) {
+            color: red;
+            font-weight: bold;
+        }
+        .class3:hover {
+           text-transform: uppercase;
+        }
+        p:not(.class4) {
+            color: green;
+            font-size: 20px;
+        }
+        .class4 ::before {
+            *
+        }
+        .class4 ::after {
+            *
+        }
+        .class4::first-letter {
+            font-size: 100px;
+        }
+        </style>
+</head>
+<body>
+    <input type="text">
+    <input type="number">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <h2 class="class2">Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt repellat aliquam provident reprehenderit ex fugit vel?</p>
+    <ul>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+    </ul>
+    <p class="class3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque.</p>
+    <p class="class4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro architecto modi corporis?</p>
+</body>
+</html>
