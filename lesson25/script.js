@@ -14,6 +14,10 @@ let f = {age: 42, name: 'xyz'}
 
 let g = [4, 5, 5]
 
+// console.log(i)
+
+// const i = 'my life is a mess'
+
 c = 96
 
 c = 'ghi'
@@ -23,6 +27,14 @@ console.log(c)
 i = 'idk'
 
 console.log(i)
+
+let k
+
+for(k=0; k<10; k++){
+
+console.log("Shafay")
+
+}
 
 let j=0
 
