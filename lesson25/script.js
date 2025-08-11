@@ -32,7 +32,7 @@ let k
 
 for(k=0; k<10; k++){
 
-console.log("Shafay")
+console.log("a")
 
 }
 
