@@ -10,12 +10,9 @@ console.log(c)
 function klm () {
     console.log('klm function called');
 }
-const p = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('Promise resolved');
-    }, 2000);
-}
-pconst p = new Promise(function(resolve, reject){
+
+
+const p = new Promise(function(resolve, reject){
 
 setTimeout(function(){
 
