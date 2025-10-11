@@ -5,7 +5,7 @@ if a > 40:
     print("a is greater than 40")
     if a/40==2:
         print("a is divided by 40 is 2")
-        else:
+    else:
         print("a is divided by 40 is not 2")
 elif a < 50:
     print("timepass")
