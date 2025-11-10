@@ -3,14 +3,14 @@ class Student:
         self.name = name #public variable
         self.__marks = marks #private variable (hidden)
 
-        def get_marks(self):
-            return self.__marks
-        
-        def set_marks(self, marks):
-         if  marks>=0 and marks<=100:
-            self.__marks = marks
-         else:
-            print("Invalid marks!")
+    def get_marks(self):
+        return self.__marks
+    
+    def set_marks(self, marks):
+      if  marks>=0 and marks<=100:
+        self.__marks = marks
+      else:
+        print("Invalid marks!")
 
 s1=Student("Mani", 25)
 s2=Student("Kumar", 45)
