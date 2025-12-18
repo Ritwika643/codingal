@@ -10,7 +10,7 @@ def sum(n):
 def arraySum(a):
     sum = 0
     for i in a:
-        sum = sum 
+        sum = sum
         return sum
     a = [12,4,3,14,5]
     arraySum(a)
