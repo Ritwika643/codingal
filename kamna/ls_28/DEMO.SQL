@@ -69,3 +69,18 @@ FOREIGN KEY (player_id) REFERENCES Player(player_id),
 
 FOREIGN KEY (match_id) REFERENCES Match(match_id)
 );
+
+SELECT p.player_name, m.opponent, pm.runs_scored, pm.wickets_taken
+FROM Player p
+INNER JOIN Player_Match pm ON p.player_id = pm.player_id
+INNER JOIN Match m ON pm.match_id = m.match_id;
+
+SELECT p.player_name, m.opponent, pm.runs_scored, pm.wickets_taken
+FROM Player p
+LEFT JOIN Player_Match pm ON p.player_id = pm.player_id
+ON pm.match_id = m.match_id;
+
+SELECT p.player_name, m.opponent, pm.runs_scored, pm.wickets_taken
+FROM Player p
+RIGHT JOIN Player_Match pm ON p.player_id = pm.player_id
+ON pm.match_id = m.match_id;
