@@ -3,13 +3,16 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 %matplotlib inline
-from google.colab import files
+import kagglehub
+from kagglehub import KaggleDatasetAdapter
 
-uploaded = files.upload()
-
-file_name = list(uploaded.keys())[0]
-
-HouseDF = pd.read_csv(file_name)
+dataset = "aariyan101/usa-housingcsv"
+file_path= "USA_Housing.csv"
+HouseDF = kagglehub.dataset_load(
+    KaggleDatasetAdapter.PANDAS,
+    dataset,
+    file_path
+)
 
 print(HouseDF.head())
 
@@ -26,6 +29,6 @@ plt.figure(figsize=(10,8))
 sns.heatmap(numeric_df.corr(),annot=True,cmap='coolwarm')
 numeric_df= HouseDF.select_dtypes(include=[np.number])
 plt.figure(figsize=(8,6))
-sns.scatterplot(x='Avg.Area Income', y='Price', data= HouseDF)
+sns.scatterplot(x='Avg. Area Income', y='Price', data= HouseDF)
 plt.title('Income vs Price')
 plt.show()
